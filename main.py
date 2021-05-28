@@ -6,11 +6,11 @@ import matplotlib
 from io import BytesIO
 import base64
 
-#bucket='msds-capstone-project'
-#data_key = '2015cleaned.csv'
-#data_location = 's3://{}/{}'.format(bucket, data_key)
+bucket='msds-capstone-project'
+data_key = '2015cleaned.csv'
+data_location = 's3://{}/{}'.format(bucket, data_key)
 
-new_data=pd.read_csv('/Users/jordanzhang/Desktop/DSDS/capstone/2015cleaned.csv')
+new_data=pd.read_csv(data_location)
 
 app = Flask(__name__)
 
