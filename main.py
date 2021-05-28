@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt    
 import matplotlib
 from io import BytesIO
+import s3fs
 import base64
 
 bucket='msds-capstone-project'
