@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+           body 
+            {
+                background-image: url('/static/Majors.jpeg');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 47% 40%;
+                background-position: center bottom;
+            }
+            h1 {text-align: center; color:rgb(0, 0, 0);
+                padding-top: 0%}
+          
+            p {text-align: center; color:black}
+            div {text-align: center;color:rgb(37, 40, 238)}
+            input {text-align: center;color:rgb(14, 146, 10) }
+            img {text-align: center }
+
+            
+        </style>
+    </head>
+
+
+ <body>
+        
+        <h1>Here is the histogram :</h1>
+        <p style="text-align:center;">
+        <img src="data:image/png;base64, {{ plot_url }}" alt="Image Placeholder" width="800" height="500" >
+        </p>
+</body>
+ </html>
+
