@@ -1,17 +1,19 @@
 from flask import Flask, request, render_template
+import boto3
 import numpy as np                                
 import pandas as pd                               
 import matplotlib.pyplot as plt    
 import matplotlib
 from io import BytesIO
-import s3fs
 import base64
 
 bucket='msds-capstone-project'
 data_key = '2015cleaned.csv'
-data_location = 's3://{}/{}'.format(bucket, data_key)
+#data_location = 's3://{}/{}'.format(bucket, data_key)
+s3 = boto3.client('s3') 
+obj = s3.get_object(Bucket= bucket, Key= data_key) 
 
-new_data=pd.read_csv(data_location)
+new_data=pd.read_csv(obj)
 
 app = Flask(__name__)
 
