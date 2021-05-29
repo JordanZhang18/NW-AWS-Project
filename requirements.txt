@@ -2,4 +2,4 @@ flask
 numpy
 pandas
 matplotlib
-s3fs
+boto3
