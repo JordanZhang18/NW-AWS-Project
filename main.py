@@ -13,7 +13,7 @@ data_key = '2015cleaned.csv'
 s3 = boto3.client('s3') 
 obj = s3.get_object(Bucket= bucket, Key= data_key) 
 
-new_data=pd.read_csv(obj)
+new_data=pd.read_csv(obj['Body'])
 
 app = Flask(__name__)
 
