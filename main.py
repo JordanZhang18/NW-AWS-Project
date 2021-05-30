@@ -10,10 +10,10 @@ import base64
 bucket='msds-capstone-project'
 data_key = '2015cleaned.csv'
 #data_location = 's3://{}/{}'.format(bucket, data_key)
-#s3 = boto3.client('s3') 
-#obj = s3.get_object(Bucket= bucket, Key= data_key) 
+s3 = boto3.client('s3') 
+obj = s3.get_object(Bucket= bucket, Key= data_key) 
 
-new_data=pd.read_csv('2015cleaned.csv')
+new_data=pd.read_csv(obj['Body'])
 
 app = Flask(__name__)
 
