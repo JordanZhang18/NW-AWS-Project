@@ -1,4 +1,5 @@
 # NW-AWS-Project
+<<<<<<< HEAD
 The National Survey of Recent College Graduates, conducted from 1973 through 2015, was a cross-sectional biennial survey that provided demographic and career information about individuals holding a bachelor's or master's degree in a science, engineering, or health field from a U.S. academic institution. The survey sampled individuals living in the United States who received their degree in the prior 2 or 3 academic years and were under age 76. Results from the NSRCG help data users understand and predict trends in education, employment opportunities, and salaries of recent graduates.
 
 The purpose of this project is to provide future college students with a visualization tool, so that they can make better informed choices when specifying a major osf study. This project extensively utilized AWS services.
@@ -31,3 +32,9 @@ The Correlation matrix shows limited correlation between metrics, so a predictiv
 A flask app is then developed to generate histograms of the selected metric, with the bin containing major of interest highlighted. The Flask app is tested and deployed using **AWS App Runner**. 
 
 The web application can be accessed at: https://j36x2fdcwt.us-east-2.awsapprunner.com/
+=======
+This flask app reads employment and demographic data of graduates in various majors. And allows users to explore the distribution of multiple metrics for each major, with the major of interest highlighted.
+  
+Deployed using AWS app runner.
+Result at: https://j36x2fdcwt.us-east-2.awsapprunner.com/
+>>>>>>> 7ffa377e107e4ea5c99385494ea8dd817731d396
