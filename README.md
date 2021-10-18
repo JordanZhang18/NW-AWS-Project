@@ -34,4 +34,4 @@ The web application can be accessed at: https://j36x2fdcwt.us-east-2.awsapprunne
 
 ![p1](/static/webapp.png)
 ![p2](/static/webapp2.png)
-![image](https://user-images.githubusercontent.com/64564704/137660210-a8444454-a1d3-49a4-a719-f5aecdf20adb.png)
+
