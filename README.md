@@ -2,14 +2,14 @@
 
 The National Survey of Recent College Graduates, conducted from 1973 through 2015, was a cross-sectional biennial survey that provided demographic and career information about individuals holding a bachelor's or master's degree in a science, engineering, or health field from a U.S. academic institution. The survey sampled individuals living in the United States who received their degree in the prior 2 or 3 academic years and were under age 76. Results from the NSRCG help data users understand and predict trends in education, employment opportunities, and salaries of recent graduates.
 
-The purpose of this project is to provide future college students with a visualization tool, so that they can make better informed choices when specifying a major osf study. This project extensively utilized AWS services.
+The purpose of this project is to provide future college students with a visualization tool, so that they can make better informed choices when specifying a major of study. This project extensively utilized AWS services.
 
 ---
 A **Lambda function** is used to download data from CORGIS Datasets Project (corgis-edu.github.io) and write to AWS S3 bucket. Triggers can be incorporated in the future such as API or Apache Kafka. **AWS Cloud 9** was used as the IDE for development and testing.
 
 ![lambda](/static/lambda.png)
 
-A notebook instance is initiated in **AWS SageMaker** service. The raw dataset is read from AWS S3 and examined.  There are 516 rows and 50 columns, including survey data from 1993 to 2015 and 50 metrics regarding majors, demographics, industries and other employment information. The raw data is cleaned to reflect only the latest 2015 survey data, and 9 key metrics in form of proportions, indead of absolute number: 
+A notebook instance is initiated in **AWS SageMaker** service. The raw dataset is read from AWS S3 and examined.  There are 516 rows and 50 columns, including survey data from 1993 to 2015 and 50 metrics regarding majors, demographics, industries, and other employment information. The raw data is cleaned to reflect only the latest 2015 survey data, and 9 key metrics in form of proportions, instead of absolute number: 
 
 * 'Demographics.Ethnicity.Minorities'
 * 'Demographics.Gender.Females'
@@ -34,3 +34,4 @@ The web application can be accessed at: https://j36x2fdcwt.us-east-2.awsapprunne
 
 ![p1](/static/webapp.png)
 ![p2](/static/webapp2.png)
+![image](https://user-images.githubusercontent.com/64564704/137660210-a8444454-a1d3-49a4-a719-f5aecdf20adb.png)
